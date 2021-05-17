@@ -1,0 +1,11 @@
+syntax = "proto3";
+option java_outer_classname = "WoiProtobuf";
+message Payload{
+  int64 sn=1;
+  string cmd=2;
+  int32 type=3;
+  bool responseRequired=4;
+  int64 respondSn=5;
+  bytes dcn=6;
+  bytes data=7;
+}
